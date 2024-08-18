@@ -28,16 +28,114 @@
   max-width:100%;
   height:auto;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'unicons';
-    src: url('../font/unicons.svg?42479262#unicons') format('svg');
-  }
+
+.button2{
+  border-radius: 1vi;
+  padding: 1vi;
+  color: white;
+  background-color: #ffc200;
 }
-*/
+
+.button2:hover{
+  border-radius: 1vi;
+  padding: 1vi;
+  color: white;
+  background-color: #e7b100;
+}
+
+.mission-vision-values .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mission-vision-values .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mission-vision-values .card-body {
+  flex: 1; /* Permite que el contenido de la tarjeta se expanda para llenar el espacio disponible */
+}
+
+.mission-vision-values .card-text {
+  margin-bottom: 0;
+  /* Ajusta otros estilos del texto si es necesario */
+}
+
+.mission-vision-values .card {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision-values .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision-values .card-title {
+  font-size: 1.8rem;
+  color: #e7b100;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.mission-vision-values .icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode .mission-vision-values .card {
+  background-color: #495057;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .mission-vision-values .card-title {
+  color: #ffc107;
+}
+
+body.dark-mode .mission-vision-values .card-text {
+  color: #f8f9fa;
+}
+
+body.dark-mode .icon {
+  color: #ffc107;
+}
+
+
+
+
+.icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el modo oscuro */
+
+
+body.dark-mode .mission-vision-values .card {
+  background-color: #495057;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .mission-vision-values .card-title {
+  color: #ffc107;
+}
+
+body.dark-mode .mission-vision-values .card-text {
+  color: #f8f9fa;
+}
+
+body.dark-mode .icon {
+  color: #ffc107;
+}
+
  
  [class^="uil-"]:before, [class*=" uil-"]:before {
   font-family: "unicons";
