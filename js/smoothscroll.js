@@ -1,6 +1,6 @@
 function mostrarImagen(nombreImagen) {
     // Establecer la ruta de la imagen
-    const rutaImagen = `../images/certificates/${nombreImagen}`;
+    const rutaImagen = `images/certificates/${nombreImagen}`;
 
     // Mostrar la imagen seleccionada
     document.getElementById('imagenCertificado').src = rutaImagen;
