@@ -10,6 +10,16 @@
   font-style: normal;
 }
 
+#certificados{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 .texto-fortaleza {
   max-width: 30vi; /* Ancho máximo en PC */
 }
@@ -22,8 +32,17 @@
   }
 }
 
+.img-fluid{
+ width: auto;
+ height: 40vi;
+ border-radius: 5vi;
+ padding: 3vi;
+
+}
+
 .img-fluid2{
-  border-radius: 15vi;
+  width: unset;
+  border-radius: 50%;
   border: 0.3vi solid #ffc200;
   max-width:100%;
   height:auto;
@@ -108,6 +127,85 @@ body.dark-mode .icon {
 }
 
 
+
+.certificate-card {
+  margin: 1vi;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.certificate-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.certificate-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.certificate-card button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.certificate-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el popup de la imagen */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-container img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  color: #f4f4f4;
+}
+
+body.dark-mode .certificate-card {
+  background-color: #495057;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .certificate-card button {
+  background-color: #ffc107;
+}
+
+body.dark-mode .certificate-card button:hover {
+  background-color: #daa300;
+}
+
+body.dark-mode .popup-container {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .popup-container img {
+  border: 2px solid #f4f4f4;
+}
 
 
 .icon {

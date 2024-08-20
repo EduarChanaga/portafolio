@@ -1,11 +1,22 @@
-/**
- * SmoothScroll
- * This helper script created by DWUser.com.  Copyright 2013 DWUser.com.  
- * Dual-licensed under the GPL and MIT licenses.  
- * All individual scripts remain property of their copyrighters.
- * Date: 10-Sep-2013
- * Version: 1.0.1
- */
+function mostrarImagen(nombreImagen) {
+    // Establecer la ruta de la imagen
+    const rutaImagen = `../images/certificates/${nombreImagen}`;
+
+    // Mostrar la imagen seleccionada
+    document.getElementById('imagenCertificado').src = rutaImagen;
+
+    // Mostrar el contenedor del popup
+    document.getElementById('popup').style.display = 'flex';
+}
+
+// Cerrar el popup al hacer clic fuera de la imagen
+document.getElementById('popup').addEventListener('click', function (e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+    }
+});
+
+
 if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
 
 /**
