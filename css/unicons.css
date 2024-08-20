@@ -11,12 +11,9 @@
 }
 
 #certificados{
-
-
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -62,22 +59,22 @@
   background-color: #e7b100;
 }
 
-.mission-vision-values .row {
+.row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.mission-vision-values .card {
+.card {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.mission-vision-values .card-body {
+.card-body {
   flex: 1; /* Permite que el contenido de la tarjeta se expanda para llenar el espacio disponible */
 }
 
-.mission-vision-values .card-text {
+.card-text {
   margin-bottom: 0;
   /* Ajusta otros estilos del texto si es necesario */
 }
@@ -94,7 +91,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.mission-vision-values .card-title {
+.card-title {
   font-size: 1.8rem;
   color: #e7b100;
   font-weight: 600;
@@ -102,7 +99,7 @@
   text-transform: uppercase;
 }
 
-.mission-vision-values .icon {
+.icon {
   font-size: 3rem;
   color: #007bff;
   margin-bottom: 20px;
@@ -138,28 +135,7 @@ body.dark-mode .icon {
   text-align: center;
 }
 
-.certificate-card h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
 
-.certificate-card p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.certificate-card button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.certificate-card button:hover {
-  background-color: #0056b3;
-}
 
 /* Estilos para el popup de la imagen */
 .popup-container {
@@ -217,16 +193,16 @@ body.dark-mode .popup-container img {
 /* Estilos para el modo oscuro */
 
 
-body.dark-mode .mission-vision-values .card {
+body.dark-mode .card {
   background-color: #495057;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
-body.dark-mode .mission-vision-values .card-title {
+body.dark-mode .card-title {
   color: #ffc107;
 }
 
-body.dark-mode .mission-vision-values .card-text {
+body.dark-mode .card-text {
   color: #f8f9fa;
 }
 
