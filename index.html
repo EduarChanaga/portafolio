@@ -190,19 +190,18 @@
   <section id="certificados">
     <!-- Recuadro 1 -->
     <div class="certificate-card">
-      <h2>Bachiller Técnico en Informática</h2>
+      <h3 class="card-title">Bachiller Técnico en Informática</h3>
       <p class="card-text">Este certificado acredita que Eduar Chanaga ha completado el nivel de educación secundaria
-        con
-        una especialidad técnica en informática.</p>
-      <a onclick="mostrarImagen('bachiller.png')" class="btn custom-btn custom-btn-bg custom-btn-link">Ver</a>
+        con una especialidad técnica en informática.</p><br>
+      <a onclick="mostrarImagen('bachiller.png')" class="btn custom-btn custom-btn-bg custom-btn-link" style="color: white;">Ver</a>
     </div>
 
     <!-- Recuadro 2 -->
     <div class="certificate-card">
-      <h2>Técnico en Programación de Software</h2>
+      <h3 class="card-title">Técnico en Programación de Software</h3>
       <p class="card-text">Este certificado acredita que Eduar Chanaga ha completado un curso especializado en la
-        programación de software, adquiriendo habilidades técnicas avanzadas.</p>
-      <a onclick="mostrarImagen('tecnico.png')" class="btn custom-btn custom-btn-bg custom-btn-link">Ver</a>
+        programación de software, adquiriendo habilidades técnicas avanzadas.</p><br>
+      <a onclick="mostrarImagen('tecnico.png')" class="btn custom-btn custom-btn-bg custom-btn-link" style="color: white;">Ver</a>
     </div>
   </section>
 
@@ -456,25 +455,30 @@
 
         <div class="col-lg-6 col-12">
           <div class="contact-form">
-            <h2 class="mb-4">Interesado en contactarme? Dejame un mensaje</h2>
-
-            <form action="" method="get">
+            <h2 class="mb-4">Interesado en contactarme? Déjame un mensaje</h2>
+        
+            <form action="/enviar-formulario" method="post">
               <div class="row">
                 <div class="col-lg-6 col-12">
+                  <label for="name">Tu nombre</label>
                   <input type="text" class="form-control" name="name" placeholder="Tu nombre" id="name">
                 </div>
-
+        
                 <div class="col-lg-6 col-12">
+                  <label for="email">Correo</label>
                   <input type="email" class="form-control" name="email" placeholder="Correo" id="email">
                 </div>
-
+        
                 <div class="col-12">
-                  <textarea name="message" rows="6" class="form-control" id="Message" placeholder="Mensaje"></textarea>
+                  <label for="message">Mensaje</label>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje"></textarea>
                 </div>
+                
                 <div class="col-12">
-                  <p class="footer-text mb-0">Tambien me puedes contactar al siguiente numero telefonico</p>
+                  <p class="footer-text mb-0">También me puedes contactar al siguiente número telefónico:</p>
                   <p class="footer-text mb-0">+57 313 3950318</p>
                 </div>
+        
                 <div class="ml-lg-auto col-lg-5 col-12">
                   <input type="submit" class="form-control submit-btn" value="Enviar">
                 </div>
@@ -482,7 +486,7 @@
             </form>
           </div>
         </div>
-
+        
       </div>
     </div>
   </section>
